@@ -1,8 +1,5 @@
 import React from "react";
-
-//include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
-
 
 // Navbar
 const Navbar = () => {
@@ -53,15 +50,15 @@ const Card = ({ title, text, imgSrc }) => {
                 <div className="card-body">
                     <h5 className="card-title">{title}</h5>
                     <p className="card-text">{text}</p>
-                    <a href="#" className="btn btn-primary">Ver más</a>
+                    <a href="#" className="btn btn-primary">Find Out More!</a>
                 </div>
             </div>
         </div>
     );
 };
 
-// App
-function App() {
+// Home Component
+const Home = () => {
     const cardsData = [
         {
             title: "Card title",
@@ -100,4 +97,4 @@ function App() {
     );
 }
 
-export default App;
+export default Home;
